@@ -1,12 +1,10 @@
 import { MongoClient } from "mongodb";
 
-const user = "user_001";
-const userPassword = "aPAgADy1URm2eV95";
-const cluster = "cluster0.cuevw";
+import { Database } from "../lib/types";
 
-const url = `mongodb+srv://${user}:${userPassword}@${cluster}.mongodb.net`;
+const url = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_USER_PASSWORD}@${process.env.DB_CLUSTER}.mongodb.net`;
 
-export const connectDatabase = async () => {
+export const connectDatabase = async (): Promise<Database> => {
   const client = await MongoClient.connect(url, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
