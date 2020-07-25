@@ -1,12 +1,22 @@
 import React from "react";
 import { render } from "react-dom";
+// import { default as ApolloClient } from "apollo-boost";
+import { ApolloProvider } from "@apollo/react-hooks";
+
 import Listings from "./sections";
 import * as serviceWorker from "./serviceWorker";
 
+const ApolloBoost = require("apollo-boost");
+const ApolloClient = ApolloBoost.default;
+
+const client = new ApolloClient({
+  uri: "/api",
+});
+
 render(
-  <React.StrictMode>
+  <ApolloProvider client={client}>
     <Listings title="MERN App Listings" />
-  </React.StrictMode>,
+  </ApolloProvider>,
   document.getElementById("root")
 );
 
