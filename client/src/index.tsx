@@ -2,6 +2,7 @@ import React from "react";
 import { render } from "react-dom";
 // import { default as ApolloClient } from "apollo-boost";
 import { ApolloProvider } from "@apollo/react-hooks";
+import "./styles/index.css";
 
 import Listings from "./sections";
 import * as serviceWorker from "./serviceWorker";
