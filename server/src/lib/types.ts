@@ -41,6 +41,15 @@ export interface Listing {
   price: number;
   numOfGuests: number;
 }
+
+export interface Viewer {
+  _id?: string;
+  token?: string;
+  avatar?: string;
+  walletId?: string;
+  didRequest: boolean;
+}
+
 export interface User {
   _id: string;
   token: string;
