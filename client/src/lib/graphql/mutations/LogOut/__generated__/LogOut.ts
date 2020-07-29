@@ -3,8 +3,6 @@
 // @generated
 // This file was automatically generated and should not be edited.
 
-import { LogInInput } from "./../../../globalTypes";
-
 // ====================================================
 // GraphQL mutation operation: LogOut
 // ====================================================
@@ -20,8 +18,4 @@ export interface LogOut_logOut {
 
 export interface LogOut {
   logOut: LogOut_logOut;
-}
-
-export interface LogOutVariables {
-  input?: LogInInput | null;
 }

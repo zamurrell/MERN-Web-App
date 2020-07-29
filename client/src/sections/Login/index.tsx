@@ -43,7 +43,7 @@ export const Login = ({ setViewer }: Props) => {
   useEffect(() => {
     const code = new URL(window.location.href).searchParams.get("code");
     if (code) {
-      logIn({
+      logInRef.current({
         variables: {
           input: { code },
         },
@@ -85,6 +85,7 @@ export const Login = ({ setViewer }: Props) => {
 
   return (
     <Content className="log-in">
+      {logInErrorBannerElement}
       <Card className="log-in-card">
         <div className="log-in-card__intro">
           <Title level={3} className="log-in-card__intro-title">
