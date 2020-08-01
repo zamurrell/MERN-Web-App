@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "dependencies": {
     "apollo-server-express": "^2.15.1",
+    "cookie-parser": "^1.4.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "googleapis": "^56.0.0",
@@ -10,6 +11,7 @@
     "lodash.merge": "^4.6.2"
   },
   "devDependencies": {
+    "@types/cookie-parser": "^1.4.2",
     "@types/express": "^4.17.7",
     "@types/lodash.merge": "^4.6.6",
     "@types/node": "^14.0.20",
