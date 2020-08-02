@@ -75,7 +75,7 @@ export const User = ({
   ) : null;
 
   const userBookingsElement = userBookings ? (
-    <userBookings
+    <UserBookings
       userBookings={userBookings}
       bookingsPage={bookingsPage}
       limit={PAGE_LIMIT}
