@@ -11,6 +11,12 @@
     padding: 0;
   }
 }
+.home-listings-skeleton .ant-row > div {
+  width: 25%;
+}
+.ant-card-loading {
+  width: 100%;
+}
 .app-header {
   display: flex;
   background: #fff;
