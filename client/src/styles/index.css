@@ -660,3 +660,11 @@ html {
     display: none;
   }
 }
+
+main.listings .ant-list .ant-row > div {
+  width: 25% !important;
+}
+
+.home-listings .ant-list .ant-row > div {
+  width: 25% !important;
+}

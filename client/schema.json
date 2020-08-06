@@ -205,6 +205,29 @@
         "possibleTypes": null
       },
       {
+        "kind": "ENUM",
+        "name": "ListingsFilter",
+        "description": null,
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "PRICE_LOW_TO_HIGH",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "PRICE_HIGH_TO_LOW",
+            "description": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
         "kind": "OBJECT",
         "name": "Listing",
         "description": null,
@@ -322,7 +345,7 @@
             "deprecationReason": null
           },
           {
-            "name": "city",
+            "name": "country",
             "description": null,
             "args": [],
             "type": {
@@ -354,7 +377,7 @@
             "deprecationReason": null
           },
           {
-            "name": "country",
+            "name": "city",
             "description": null,
             "args": [],
             "type": {
@@ -982,29 +1005,6 @@
         "inputFields": null,
         "interfaces": [],
         "enumValues": null,
-        "possibleTypes": null
-      },
-      {
-        "kind": "ENUM",
-        "name": "ListingsFilter",
-        "description": null,
-        "fields": null,
-        "inputFields": null,
-        "interfaces": null,
-        "enumValues": [
-          {
-            "name": "PRICE_LOW_TO_HIGH",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "PRICE_HIGH_TO_LOW",
-            "description": null,
-            "isDeprecated": false,
-            "deprecationReason": null
-          }
-        ],
         "possibleTypes": null
       },
       {
