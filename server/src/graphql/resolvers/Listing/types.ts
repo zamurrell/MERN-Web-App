@@ -20,6 +20,7 @@ export interface ListingBookingsData {
 }
 
 export interface ListingsArgs {
+  location: string | null;
   filter: ListingsFilter;
   limit: number;
   page: number;
@@ -28,4 +29,11 @@ export interface ListingsArgs {
 export interface ListingsData {
   total: number;
   result: Listing[];
+  region: string | null;
+}
+
+export interface ListingsQuery {
+  country?: string;
+  admin?: string;
+  city?: string;
 }
