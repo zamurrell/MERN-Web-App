@@ -10,7 +10,8 @@
     "express": "^4.17.1",
     "googleapis": "^56.0.0",
     "graphql": "^15.3.0",
-    "lodash.merge": "^4.6.2"
+    "lodash.merge": "^4.6.2",
+    "stripe": "^8.83.0"
   },
   "devDependencies": {
     "@types/cookie-parser": "^1.4.2",
@@ -18,6 +19,7 @@
     "@types/google__maps": "^0.5.13",
     "@types/lodash.merge": "^4.6.6",
     "@types/node": "^14.0.20",
+    "@types/stripe": "^7.13.24",
     "@typescript-eslint/eslint-plugin": "^3.6.0",
     "@typescript-eslint/parser": "^3.6.0",
     "eslint": "^7.4.0",
