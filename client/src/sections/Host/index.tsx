@@ -209,10 +209,8 @@ export const Host = ({ viewer }: Props) => {
           <Input.TextArea
             rows={3}
             maxLength={400}
-            placeholder={`
-              Modern, clean, and iconic home of the Fresh Prince.
-              Situated in the heart of Bel-Air, Los Angeles.
-            `}
+            placeholder="Modern, clean, and iconic home of the Fresh Prince.
+            Situated in the heart of Bel-Air, Los Angeles."
           />
         </Form.Item>
 
