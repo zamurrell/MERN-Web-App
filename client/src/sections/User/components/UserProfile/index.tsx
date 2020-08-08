@@ -4,7 +4,7 @@ import { Avatar, Button, Card, Divider, Tag, Typography } from "antd";
 import {
   formatListingPrice,
   displaySuccessNotification,
-  displayErrorMessage
+  displayErrorMessage,
 } from "../../../../lib/utils";
 import { DISCONNECT_STRIPE } from "../../../../lib/graphql/mutations";
 import { DisconnectStripe as DisconnectStripeData } from "../../../../lib/graphql/mutations/DisconnectStripe/__generated__/DisconnectStripe";
@@ -16,7 +16,7 @@ interface Props {
   viewer: Viewer;
   viewerIsUser: boolean;
   setViewer: (viewer: Viewer) => void;
-  handleUserRefetch: () => void;
+  handleUserRefetch: () => Promise<void>;
 }
 
 const stripeAuthUrl = `https://connect.stripe.com/oauth/authorize?response_type=code&client_id=${process.env.REACT_APP_S_CLIENT_ID}&scope=read_write`;
@@ -27,12 +27,12 @@ export const UserProfile = ({
   viewer,
   viewerIsUser,
   setViewer,
-  handleUserRefetch
+  handleUserRefetch,
 }: Props) => {
   const [disconnectStripe, { loading }] = useMutation<DisconnectStripeData>(
     DISCONNECT_STRIPE,
     {
-      onCompleted: data => {
+      onCompleted: (data) => {
         if (data && data.disconnectStripe) {
           setViewer({ ...viewer, hasWallet: data.disconnectStripe.hasWallet });
           displaySuccessNotification(
@@ -46,7 +46,7 @@ export const UserProfile = ({
         displayErrorMessage(
           "Sorry! We weren't able to disconnect you from Stripe. Please try again later!"
         );
-      }
+      },
     }
   );
 
@@ -61,7 +61,9 @@ export const UserProfile = ({
       </Paragraph>
       <Paragraph>
         Income Earned:{" "}
-        <Text strong>{user.income ? formatListingPrice(user.income) : `$0`}</Text>
+        <Text strong>
+          {user.income ? formatListingPrice(user.income) : `$0`}
+        </Text>
       </Paragraph>
       <Button
         type="primary"
@@ -73,14 +75,15 @@ export const UserProfile = ({
       </Button>
       <Paragraph type="secondary">
         By disconnecting, you won't be able to receive{" "}
-        <Text strong>any further payments</Text>. This will prevent users from booking
-        listings that you might have already created.
+        <Text strong>any further payments</Text>. This will prevent users from
+        booking listings that you might have already created.
       </Paragraph>
     </Fragment>
   ) : (
     <Fragment>
       <Paragraph>
-        Interested in becoming a TinyHouse host? Register with your Stripe account!
+        Interested in becoming a TinyHouse host? Register with your Stripe
+        account!
       </Paragraph>
       <Button
         type="primary"
@@ -98,7 +101,7 @@ export const UserProfile = ({
         >
           Stripe
         </a>{" "}
-        to help transfer your earnings in a secure and truster manner.
+        to help transfer your earnings in a secure and trusted manner.
       </Paragraph>
     </Fragment>
   );
