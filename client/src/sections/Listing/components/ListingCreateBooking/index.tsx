@@ -33,6 +33,7 @@ export const ListingCreateBooking = ({
   setModalVisible,
 }: Props) => {
   const bookingsIndexJSON: BookingsIndex = JSON.parse(bookingsIndex);
+  console.log("bookingsIndexJSON year: ", bookingsIndexJSON);
 
   const dateIsBooked = (currentDate: Moment) => {
     const year = moment(currentDate).year();
@@ -49,7 +50,6 @@ export const ListingCreateBooking = ({
   const disabledDate = (currentDate?: Moment) => {
     if (currentDate) {
       const dateIsBeforeEndOfDay = currentDate.isBefore(moment().endOf("day"));
-
       return dateIsBeforeEndOfDay || dateIsBooked(currentDate);
     } else {
       return false;
@@ -65,6 +65,7 @@ export const ListingCreateBooking = ({
       }
 
       let dateCursor = checkInDate;
+      console.log("dateCursor: ", dateCursor);
 
       while (moment(dateCursor).isBefore(selectedCheckOutDate, "days")) {
         dateCursor = moment(dateCursor).add(1, "days");

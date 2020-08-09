@@ -1,5 +1,6 @@
 @import "~antd/dist/antd.css";
 @import url(https://fonts.googleapis.com/css?family=Sacramento);
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 .menu {
   width: 100%;
   padding: 0 20px;
@@ -399,7 +400,7 @@
   font-size: 13px;
 }
 .listing-details__host-name {
-  font-family: Sacramento, cursive;
+  font-family: Permanent Marker, cursive;
   display: inline-block;
   padding-left: 10px;
   position: relative;

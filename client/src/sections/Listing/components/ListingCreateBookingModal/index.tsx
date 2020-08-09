@@ -52,7 +52,7 @@ export const ListingCreateBookingModal = ({
       clearBookingData();
       displaySuccessNotification(
         "You've successfully booked the listing!",
-        "Booking history can always be found in your User page."
+        "Booking history can always be found in your profile page."
       );
       handleListingRefetch();
     },
