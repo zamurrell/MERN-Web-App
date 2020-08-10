@@ -68,6 +68,7 @@ export const UserProfile = ({
       <Button
         type="primary"
         className="user-profile__details-cta"
+        danger
         loading={loading}
         onClick={() => disconnectStripe()}
       >
@@ -82,11 +83,11 @@ export const UserProfile = ({
   ) : (
     <Fragment>
       <Paragraph>
-        Interested in becoming a TinyHouse host? Register with your Stripe
-        account!
+        Interested in becoming a host? Register with your Stripe account!
       </Paragraph>
       <Button
         type="primary"
+        danger
         className="user-profile__details-cta"
         onClick={redirectToStripe}
       >

@@ -5,7 +5,7 @@ import { Input, Layout } from "antd";
 import { Viewer } from "../../lib/types";
 import { MenuItems } from "./components";
 import { displayErrorMessage } from "../../lib/utils";
-import logo from "./assets/tinyhouse-logo.png";
+import logo from "./assets/mern-logo.png";
 
 interface Props {
   viewer: Viewer;

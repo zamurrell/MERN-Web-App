@@ -142,6 +142,7 @@ export const ListingCreateBookingModal = ({
           <Button
             size="large"
             type="primary"
+            danger
             className="listing-booking-modal__cta"
             loading={loading}
             onClick={handleCreateBooking}

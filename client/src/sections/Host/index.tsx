@@ -313,7 +313,7 @@ export const Host = ({ viewer }: Props) => {
         </Form.Item>
 
         <Form.Item>
-          <Button type="primary" htmlType="submit">
+          <Button type="primary" htmlType="submit" danger>
             Submit
           </Button>
         </Form.Item>

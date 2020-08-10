@@ -330,7 +330,7 @@
   margin: 0 auto 10px;
 }
 .ant-calendar-date__check-in {
-  border: 1px solid #1890ff;
+  border: 1px solid #3cec97;
   border-radius: 50%;
 }
 .ant-calendar-footer-text {
@@ -506,7 +506,7 @@
 .log-in-card__google-button {
   margin: 40px auto;
   border-radius: 2px;
-  background-color: #4285f4;
+  background-color: #ff4d4f;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.24), 0 0 1px 0 rgba(0, 0, 0, 0.12);
   border: none;
   display: flex;
@@ -519,7 +519,7 @@
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
 }
 .log-in-card__google-button:active {
-  background: #3367d6;
+  background: #ff4d4f;
 }
 .log-in-card__google-button-logo {
   height: 43px;
@@ -528,6 +528,7 @@
   text-align: left;
   white-space: nowrap;
   padding: 10px;
+  background-color: #ff4d4f;
 }
 .not-found {
   display: flex;
@@ -668,4 +669,9 @@ main.listings .ant-list .ant-row > div {
 
 .home-listings .ant-list .ant-row > div {
   width: 25% !important;
+}
+
+.ant-btn-primary {
+  background: #ff4d4f !important;
+  border-color: #ff4d4f !important;
 }

@@ -33,7 +33,6 @@ export const ListingCreateBooking = ({
   setModalVisible,
 }: Props) => {
   const bookingsIndexJSON: BookingsIndex = JSON.parse(bookingsIndex);
-  console.log("bookingsIndexJSON year: ", bookingsIndexJSON);
 
   const dateIsBooked = (currentDate: Moment) => {
     const year = moment(currentDate).year();
@@ -65,7 +64,6 @@ export const ListingCreateBooking = ({
       }
 
       let dateCursor = checkInDate;
-      console.log("dateCursor: ", dateCursor);
 
       while (moment(dateCursor).isBefore(selectedCheckOutDate, "days")) {
         dateCursor = moment(dateCursor).add(1, "days");
@@ -146,6 +144,7 @@ export const ListingCreateBooking = ({
           type="primary"
           className="listing-booking__card-cta"
           onClick={() => setModalVisible(true)}
+          danger
         >
           Request to book!
         </Button>

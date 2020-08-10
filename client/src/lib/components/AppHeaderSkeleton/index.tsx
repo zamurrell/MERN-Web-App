@@ -1,7 +1,7 @@
 import React from "react";
 import { Layout } from "antd";
 
-import logo from "./assets/tinyhouse-logo.png";
+import logo from "./assets/mern-logo.png";
 
 const { Header } = Layout;
 

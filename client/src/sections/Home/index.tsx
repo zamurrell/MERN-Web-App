@@ -6,8 +6,8 @@ import { useQuery } from "@apollo/react-hooks";
 import { HomeHero, HomeListings, HomeListingsSkeleton } from "./components";
 import mapBackground from "./assets/map-background.jpg";
 import { displayErrorMessage } from "../../lib/utils";
-import sanFransiscoImage from "./assets/san-fransisco.jpg";
-import cancunImage from "./assets/cancun.jpg";
+import singaporeImage from "./assets/singapore-overlay-text.jpeg";
+import newYorkImage from "./assets/nyc-adjusted.jpeg";
 import { LISTINGS } from "../../lib/graphql/queries";
 import {
   Listings as ListingsData,
@@ -41,7 +41,7 @@ export const Home = ({ history }: RouteComponentProps) => {
     if (data) {
       return (
         <HomeListings
-          title="Premium Listings"
+          title="Luxurious Rentals"
           listings={data.listings.result}
         />
       );
@@ -67,6 +67,8 @@ export const Home = ({ history }: RouteComponentProps) => {
     >
       <HomeHero onSearch={onSearch} />
 
+      {renderListingsSection()}
+
       <div className="home__cta-section">
         <Title level={2} className="home__cta-section-title">
           Your guide for all things rental
@@ -77,24 +79,22 @@ export const Home = ({ history }: RouteComponentProps) => {
         </Paragraph>
         <Link
           to="/listings/united%20states"
-          className="ant-btn ant-btn-primary ant-btn-lg home__cta-section-button"
+          className="ant-btn ant-btn-danger ant-btn-lg home__cta-section-button"
         >
           Popular listings in the United States
         </Link>
       </div>
 
-      {renderListingsSection()}
-
       <div className="home__listings">
         <Title level={4} className="home__listings-title">
-          Listings of any kind
+          Spaces for any trip
         </Title>
         <Row gutter={12}>
           <Col xs={24} sm={12}>
-            <Link to="/listings/san%20fransisco">
+            <Link to="/listings/new%20york">
               <div className="home__listings-img-cover">
                 <img
-                  src={sanFransiscoImage}
+                  src={newYorkImage}
                   alt="San Fransisco"
                   className="home__listings-img"
                 />
@@ -102,10 +102,10 @@ export const Home = ({ history }: RouteComponentProps) => {
             </Link>
           </Col>
           <Col xs={24} sm={12}>
-            <Link to="/listings/cancún">
+            <Link to="/listings/singapore">
               <div className="home__listings-img-cover">
                 <img
-                  src={cancunImage}
+                  src={singaporeImage}
                   alt="Cancún"
                   className="home__listings-img"
                 />

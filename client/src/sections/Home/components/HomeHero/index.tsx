@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Card, Col, Input, Row, Typography } from "antd";
 
-import torontoImage from "../../assets/toronto.jpg";
-import dubaiImage from "../../assets/dubai.jpg";
+import puertoVallartaImage from "../../assets/puerto-vallarta.jpg";
+import seoulImage from "../../assets/seoul.jpg";
 import losAngelesImage from "../../assets/los-angeles.jpg";
-import londonImage from "../../assets/london.jpg";
+import sydneyImage from "../../assets/sydney.jpg";
 
 const { Title } = Typography;
 const { Search } = Input;
@@ -19,7 +19,7 @@ export const HomeHero = ({ onSearch }: Props) => {
     <div className="home-hero">
       <div className="home-hero__search">
         <Title className="home-hero__title">
-          Find a place you'll love to stay at
+          Find a place to make your trip unforgettable - worldwide
         </Title>
         <Search
           placeholder="Search 'San Fransisco'"
@@ -30,18 +30,6 @@ export const HomeHero = ({ onSearch }: Props) => {
         />
       </div>
       <Row gutter={12} className="home-hero__cards">
-        <Col xs={12} md={6}>
-          <Link to="/listings/toronto">
-            <Card cover={<img alt="Toronto" src={torontoImage} />}>
-              Toronto
-            </Card>
-          </Link>
-        </Col>
-        <Col xs={12} md={6}>
-          <Link to="/listings/dubai">
-            <Card cover={<img alt="Dubai" src={dubaiImage} />}>Dubai</Card>
-          </Link>
-        </Col>
         <Col xs={0} md={6}>
           <Link to="/listings/los%20angeles">
             <Card cover={<img alt="Los Angeles" src={losAngelesImage} />}>
@@ -49,9 +37,21 @@ export const HomeHero = ({ onSearch }: Props) => {
             </Card>
           </Link>
         </Col>
+        <Col xs={12} md={6}>
+          <Link to="/listings/seoul">
+            <Card cover={<img alt="Seoul" src={seoulImage} />}>Seoul</Card>
+          </Link>
+        </Col>
+        <Col xs={12} md={6}>
+          <Link to="/listings/puerto%20vallarta">
+            <Card cover={<img alt="Dubai" src={puertoVallartaImage} />}>
+              Puerto Vallarta
+            </Card>
+          </Link>
+        </Col>
         <Col xs={0} md={6}>
-          <Link to="/listings/london">
-            <Card cover={<img alt="London" src={londonImage} />}>London</Card>
+          <Link to="/listings/sydney">
+            <Card cover={<img alt="London" src={sydneyImage} />}>Sydney</Card>
           </Link>
         </Col>
       </Row>

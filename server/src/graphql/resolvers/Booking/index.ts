@@ -17,17 +17,11 @@ const resolveBookingsIndex = (
 
   checkOut.setFullYear(checkOut.getFullYear() - 200000);
   dateCursor.setFullYear(dateCursor.getFullYear() - 200000);
-  console.log("checkOut: ", checkOut);
-  console.log("dateCursor before while loop: ", dateCursor);
 
   while (dateCursor <= checkOut) {
     const y = dateCursor.getUTCFullYear();
     const m = dateCursor.getUTCMonth();
     const d = dateCursor.getUTCDate();
-
-    console.log("Year: ", y);
-    console.log("Month: ", m);
-    console.log("Day: ", d);
 
     if (!newBookingsIndex[y]) {
       newBookingsIndex[y] = {};
@@ -87,9 +81,6 @@ export const bookingResolvers: IResolvers = {
 
         checkInDate.setFullYear(checkInDate.getFullYear() - 200000);
         checkOutDate.setFullYear(checkOutDate.getFullYear() - 200000);
-
-        console.log("checkInDate: ", checkInDate);
-        console.log("checkOutDate: ", checkOutDate);
 
         if (checkOutDate < checkInDate) {
           throw new Error("You can't check out before you check in");

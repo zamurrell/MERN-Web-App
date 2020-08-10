@@ -58,7 +58,9 @@ export const MenuItems = ({ viewer, setViewer }: Props) => {
     ) : (
       <Item>
         <Link to="/login">
-          <Button type="primary">Sign In</Button>
+          <Button type="primary" danger>
+            Sign In
+          </Button>
         </Link>
       </Item>
     );
