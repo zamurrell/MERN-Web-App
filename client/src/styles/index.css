@@ -215,6 +215,7 @@
   background-image: url(/static/media/map-background.c21df147.jpg);
   background-repeat: no-repeat;
   background-position: 10% 0;
+  background-color: #f7f7f7;
 }
 @media (max-width: 75em) {
   .home {

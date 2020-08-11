@@ -5,7 +5,7 @@ import { useQuery } from "@apollo/react-hooks";
 
 import { useScrollToTop } from "../../lib/hooks";
 import { HomeHero, HomeListings, HomeListingsSkeleton } from "./components";
-import mapBackground from "./assets/map-background.jpg";
+import mapBackground from "./assets/map-background.png";
 import { displayErrorMessage } from "../../lib/utils";
 import singaporeImage from "./assets/singapore-overlay-text.jpeg";
 import newYorkImage from "./assets/nyc-adjusted.jpeg";
