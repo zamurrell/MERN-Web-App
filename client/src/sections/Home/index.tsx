@@ -3,6 +3,7 @@ import { Col, Row, Layout, Typography } from "antd";
 import { RouteComponentProps, Link } from "react-router-dom";
 import { useQuery } from "@apollo/react-hooks";
 
+import { useScrollToTop } from "../../lib/hooks";
 import { HomeHero, HomeListings, HomeListingsSkeleton } from "./components";
 import mapBackground from "./assets/map-background.jpg";
 import { displayErrorMessage } from "../../lib/utils";
@@ -30,8 +31,11 @@ export const Home = ({ history }: RouteComponentProps) => {
         limit: PAGE_LIMIT,
         page: PAGE_NUMBER,
       },
+      fetchPolicy: "cache-and-network",
     }
   );
+
+  useScrollToTop();
 
   const renderListingsSection = () => {
     if (loading) {

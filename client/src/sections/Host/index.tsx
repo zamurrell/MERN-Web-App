@@ -18,6 +18,7 @@ import {
 } from "@ant-design/icons";
 import { useMutation } from "@apollo/react-hooks";
 
+import { useScrollToTop } from "../../lib/hooks";
 import { ListingType } from "../../lib/graphql/globalTypes";
 import {
   iconColor,
@@ -56,6 +57,8 @@ export const Host = ({ viewer }: Props) => {
       );
     },
   });
+
+  useScrollToTop();
 
   const handleImageUpload = (info: UploadChangeParam) => {
     const { file } = info;

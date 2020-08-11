@@ -9,6 +9,7 @@ import {
 } from "../../lib/graphql/mutations/ConnectStripe/__generated__/ConnectStripe";
 import { displaySuccessNotification } from "../../lib/utils";
 import { Viewer } from "../../lib/types";
+import { useScrollToTop } from "../../lib/hooks";
 
 interface Props {
   viewer: Viewer;
@@ -51,6 +52,8 @@ export const Stripe = ({
       history.replace("/login");
     }
   }, [history]);
+
+  useScrollToTop();
 
   if (data && data.connectStripe) {
     return <Redirect to={`/user/${viewer.id}`} />;

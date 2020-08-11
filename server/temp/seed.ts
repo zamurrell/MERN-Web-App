@@ -147,7 +147,7 @@ const listings: Listing[] = [
     city: "Sydney",
     bookings: [],
     bookingsIndex: {},
-    price: 23903,
+    price: 19903,
     numOfGuests: 4,
   },
   {
@@ -177,13 +177,14 @@ const listings: Listing[] = [
       "https://res.cloudinary.com/dglmidgbf/image/upload/v1597013855/Screen_Shot_2020-08-09_at_5.57.05_PM_fzt8uk.png",
     host: "5d378db94e84753160e08b59",
     type: ListingType.Apartment,
-    address: "Guerrero 405, Puerto Vallarta, Jalisco, Mexico",
+    address:
+      "Costa Rica 1124, 5 de Diciembre, Puerto Vallarta, Jalisco, Mexico",
     country: "Mexico",
     admin: "Jalisco",
     city: "Puerto Vallarta",
     bookings: [],
     bookingsIndex: {},
-    price: 18126,
+    price: 23826,
     numOfGuests: 5,
   },
   {
@@ -331,7 +332,7 @@ const listings: Listing[] = [
     city: "Los Angeles",
     bookings: [],
     bookingsIndex: {},
-    price: 22707,
+    price: 23097,
     numOfGuests: 5,
   },
   {
@@ -509,7 +510,7 @@ const listings: Listing[] = [
     city: "Seoul",
     bookings: [],
     bookingsIndex: {},
-    price: 11349,
+    price: 23249,
     numOfGuests: 5,
   },
   {
@@ -527,7 +528,7 @@ const listings: Listing[] = [
     city: "Seoul",
     bookings: [],
     bookingsIndex: {},
-    price: 23483,
+    price: 20483,
     numOfGuests: 4,
   },
   {
@@ -653,7 +654,7 @@ const listings: Listing[] = [
     city: "Cancún",
     bookings: [],
     bookingsIndex: {},
-    price: 24842,
+    price: 21842,
     numOfGuests: 4,
   },
   {
@@ -671,7 +672,7 @@ const listings: Listing[] = [
     city: "Cancún",
     bookings: [],
     bookingsIndex: {},
-    price: 23012,
+    price: 20512,
     numOfGuests: 1,
   },
   {
@@ -725,7 +726,7 @@ const listings: Listing[] = [
     city: "New York",
     bookings: [],
     bookingsIndex: {},
-    price: 23012,
+    price: 27512,
     numOfGuests: 1,
   },
   {
