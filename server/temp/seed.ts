@@ -717,7 +717,7 @@ const listings: Listing[] = [
     description:
       "Views of Hudson River, East River, and the Atlantic Ocean. The great room boasts ceilings of approximately 12 ft. Four bedrooms, five-and-a-half bathrooms",
     image:
-      "https://res.cloudinary.com/dglmidgbf/image/upload/v1597017582/penthouseNYC_yernvu.webp",
+      "https://res.cloudinary.com/dglmidgbf/image/upload/v1597179206/penthouse_azo1mv.jpg",
     host: "5d378db94e84753160e08b57",
     type: ListingType.Apartment,
     address: "157 W 57th St PENTHOUSE 87, New York, NY 10019",

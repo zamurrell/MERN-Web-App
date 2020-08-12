@@ -30,7 +30,7 @@ export const HomeHero = ({ onSearch }: Props) => {
         />
       </div>
       <Row gutter={12} className="home-hero__cards">
-        <Col xs={0} md={6}>
+        <Col xs={12} md={6}>
           <Link to="/listings/los%20angeles">
             <Card cover={<img alt="Los Angeles" src={losAngelesImage} />}>
               Los Angeles
@@ -49,7 +49,7 @@ export const HomeHero = ({ onSearch }: Props) => {
             </Card>
           </Link>
         </Col>
-        <Col xs={0} md={6}>
+        <Col xs={12} md={6}>
           <Link to="/listings/sydney">
             <Card cover={<img alt="London" src={sydneyImage} />}>Sydney</Card>
           </Link>
