@@ -2,6 +2,8 @@
 
 Home/property sharing app. Post listings, book stays, process payments with [Stripe], register without filling out forms with Google OAuth.
 
+### Live, Hosted App
+
 Click [here] to see the app for yourself, hosted on Heroku.
 
 ### Tech
