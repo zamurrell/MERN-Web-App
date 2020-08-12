@@ -14,7 +14,7 @@ This project uses the following:
 - GraphQL
 - MongoDB Atlas
 - Express
-- React (stateless components and hooks)
+- React (function components and hooks)
 - Apollo Server & React Apollo Hooks
 - Node.js
 - Google & Stripe OAuth2
