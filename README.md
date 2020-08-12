@@ -4,8 +4,6 @@ Home/property sharing app. Post listings, book stays, process payments with [Str
 
 Click [here] to see the app for yourself, hosted on Heroku.
 
-![Screenshot](https://i.imgur.com/FHNDfjR.png)
-
 ### Tech
 
 This project uses the following:
@@ -25,6 +23,8 @@ Images hosted on [Cloudinary].
 Unit testing of home and login routes performed with Jest & React Testing Library.
 
 This repo is the development version of this project. For the compiled version deployed on Heroku, [click-here].
+
+![Screenshot](https://i.imgur.com/FHNDfjR.png)
 
 [stripe]: https://stripe.com/
 [here]: https://mern-home-sharing-app.herokuapp.com/
